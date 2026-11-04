@@ -1,0 +1,86 @@
+name: "HexYansRule"
+description:
+author: "HexYans"
+homepage: "https://github.com/HexYans"
+icon: "https://cdn.nodeimage.com/i/8vygBRNBN0vG9E2aaeShetE6NmQr58UZ.webp"
+rules:
+  #==========禁止防诈上传==========#
+  - domain:
+      match: dw.wo.com.cn
+      policy: REJECT
+      disabled: false
+  - domain:
+      match: gjfzpt.cn
+      policy: REJECT
+      disabled: false
+  - domain:
+      match: fzapp.gjfzpt.cn
+      policy: REJECT
+      disabled: false
+  - domain:
+      match: fzapph5.gjfzpt.cn
+      policy: REJECT
+      disabled: false
+  - domain:
+      match: fzapp-test-tyy.gjfzpt.cn
+      policy: REJECT
+      disabled: false
+  - domain:
+      match: oss.gjfzpt.cn
+      policy: REJECT
+      disabled: false
+  - domain:
+      match: fzapp.chanct.cn
+      policy: REJECT
+      disabled: false
+  - domain:
+      match: fzapph5.chanct.cn
+      policy: REJECT
+      disabled: false
+  - domain:
+      match: frappe.chanct.cn
+      policy: REJECT
+      disabled: false
+  - domain:
+      match: oss.chanct.cn
+      policy: REJECT
+      disabled: false
+  - domain:
+      match: sz.gafz.chanct.cn
+      policy: REJECT
+      disabled: false
+  - domain:
+      match: tingfeng.chanct.cn
+      policy: REJECT
+      disabled: false
+  #==========防止微信DNS污染==========#
+  - domain:
+      match: dns.weixin.qq.com
+      policy: DIRECT
+      disabled: false
+  - domain:
+      match: dns.weixin.qq.com.cn
+      policy: DIRECT
+      disabled: false
+  #==========EMBY分流==========#
+  - domain_suffix:
+      match: dmyg1.xiaoheixh.de
+      policy: DIRECT
+      disabled: false
+  - domain_suffix:
+      match: p3mc4.mobaiemby.site
+      policy: DIRECT
+      disabled: false
+  #==========苹果通知推送==========#
+  - domain_suffix:
+      match: push.apple.com
+      policy: PROXY
+      disabled: false
+  - domain_suffix:
+      match: apple.com
+      policy: DIRECT
+      disabled: false
+  - protocol:
+      match: stun
+      policy: REJECT
+      disabled: false
