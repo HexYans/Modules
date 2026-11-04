@@ -1,5 +1,6 @@
 name: YouTube增强
 description: YouTube增强
+icon: "https://cdn.nodeimage.com/i/8vygBRNBN0vG9E2aaeShetE6NmQr58UZ.webp"
 compat_arguments:
   blockUpload: 'true'
   blockShorts: 'true'
