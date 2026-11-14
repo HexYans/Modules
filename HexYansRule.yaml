@@ -4,6 +4,11 @@ author: "HexYans"
 homepage: "https://github.com/HexYans"
 icon: "https://cdn.nodeimage.com/i/8vygBRNBN0vG9E2aaeShetE6NmQr58UZ.webp"
 rules:
+  #=========书源直连==========#
+  - domain_suffix:
+      match: shuhaige.net
+      policy: directs
+      disabled: false
   #==========禁止防诈上传==========#
   - domain:
       match: dw.wo.com.cn
